@@ -1,29 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Pacifico&display=swap');
+@import url('animations.css');
 * {
     padding: 0;
     margin: 0 auto;
 }
 
+html {
+    height: 100%;
+}
+
+:root {
+    --Sapphire: hsla(277, 96%, 22%, 1);
+    --Azure: hsla(278, 96%, 20%, 1);
+    --Cosmo: hsla(277, 96%, 18%, 1);
+    --Galaxy: hsla(272, 100%, 10%, 1);
+    --Mystic: hsla(267, 50%, 9%, 1);
+    --Nebula: hsla(313, 73%, 9%, 1);
+    --Eclipse: hsla(328, 100%, 11%, 1);
+    --Regal: hsla(327, 100%, 16%, 1);
+    --Majesty: hsla(328, 62%, 24%, 1);
+    --Light: hsla(278, 49%, 59%, 1);
+  }
+  
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: #355070;
+    background-color: var(--Mystic);
+}
+
+.logo-wrapper {
+    display: flex;
+    position: relative;
+    width: 30vh;
+    aspect-ratio: 1/1;
+    font-family: 'Cutive Mono', monospace;;
 }
 
 .logo {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 5vw;
-    color: #eaac8b;
-    max-width: 30vw;
-    max-height: 30vw;
-    width: 60%;
-    height: 60%;
-    font-family: 'Pacifico', cursive;
-    background-color: #6d597a;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--Light);
+    width: 100%;
+    height: 100%;
+    background-color: var(--Cosmo);
+    position: absolute;
+    z-index: 100;
+    border-radius: 100%;
+}
+
+.logo-shadow1 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--Sapphire), var(--Cosmo));
+    position: absolute;
+    z-index: 1;
+    border-radius: 100%;
+    animation: cyclic-blur 3s infinite ease-in-out,
+        rotate 5s infinite linear;
+}
+
+.logo-shadow2 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--Majesty), var(--Cosmo));
+    position: absolute;
+    z-index: 2;
+    border-radius: 100%;
+    animation: cyclic-blur 10s infinite ease-in-out,
+        rotate 10s infinite ease-in-out;
 }

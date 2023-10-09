@@ -1,0 +1,20 @@
+@keyframes cyclic-blur {
+    0%, 100% {
+      filter: blur(3vw);
+    }
+    50% {
+      filter: blur(6vw);
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+        transform-origin: center 40%;
+      transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: center 60%;
+      transform: rotate(360deg);
+    }
+  }
+  
