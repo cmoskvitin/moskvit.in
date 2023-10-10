@@ -1,20 +1,30 @@
+@import url("colors.css");
 @keyframes cyclic-blur {
-    0%, 100% {
-      filter: blur(3vw);
-    }
-    50% {
-      filter: blur(6vw);
-    }
+  0%,
+  100% {
+    filter: blur(0.7rem);
   }
+  50% {
+    filter: blur(1.4rem);
+  }
+}
 
-  @keyframes rotate {
-    0% {
-        transform-origin: center 40%;
-      transform: rotate(0deg);
-    }
-    100% {
-        transform-origin: center 60%;
-      transform: rotate(360deg);
-    }
+@keyframes rotate {
+  0% {
+    transform-origin: center 60%;
+    transform: rotate(0deg);
   }
-  
+  100% {
+    transform-origin: center 30%;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes opacity {
+  0% {
+   opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+} 

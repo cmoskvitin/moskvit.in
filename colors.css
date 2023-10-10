@@ -1,0 +1,19 @@
+:root {
+  --Blue: hsla(195, 89%, 33%, 1);
+  --Sapphire: hsla(277, 96%, 22%, 1);
+  --Azure: hsla(278, 96%, 20%, 1);
+  --Cosmo: hsla(277, 96%, 18%, 1);
+  --Galaxy: hsla(272, 100%, 10%, 1);
+  --Mystic: hsla(267, 50%, 9%, 1);
+  --Nebula: hsla(313, 73%, 9%, 1);
+  --Eclipse: hsla(328, 100%, 11%, 1);
+  --Regal: hsla(327, 100%, 16%, 1);
+  --Majesty: hsla(328, 62%, 24%, 1);
+  --Light: hsla(278, 49%, 59%, 1);
+
+  --Ethereal: hsla(278, 60%, 65%, 1);
+  --Celestial: hsla(277, 70%, 70%, 1);
+  --Luminous: hsla(278, 72%, 75%, 1);
+  --Radiant: hsla(277, 74%, 80%, 1);
+  --Astral: hsla(278, 76%, 85%, 1);
+}
