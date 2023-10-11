@@ -11,11 +11,19 @@
 
 @keyframes rotate {
   0% {
-    transform-origin: center 60%;
+    transform-origin: 50% 45%;
     transform: rotate(0deg);
   }
+  25% {
+    transform-origin: 55% 50%;
+    transform: rotate(1deg);
+  }
+  50% {
+    transform-origin: 50% 55%;
+    transform: rotate(240deg);
+  }
   100% {
-    transform-origin: center 30%;
+    transform-origin: 45% 50%;
     transform: rotate(360deg);
   }
 }

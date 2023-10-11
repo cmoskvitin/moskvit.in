@@ -32,16 +32,17 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 4vh;
-  color: var(--Astral);
+  color: var(--Sapphire);
   width: 100%;
   height: 100%;
   background: radial-gradient(var(--Light), var(--Luminous));
-  /* opacity: 1; */
+  opacity: 1;
   position: absolute;
   z-index: 100;
   border-radius: 100%;
-  filter: invert(20%)
+  filter: invert(20%);
 }
+
 
 .logo-shadow1 {
   width: 100%;
@@ -51,7 +52,7 @@ html {
   z-index: 1;
   border-radius: 100%;
   animation: cyclic-blur 7s infinite ease-in-out,
-  rotate 20s infinite alternate ease-in-out,
+  rotate 20s infinite linear,
   opacity 10s infinite alternate ease-in-out
 }
 
@@ -63,7 +64,7 @@ html {
   z-index: 2;
   border-radius: 100%;
   animation: cyclic-blur 10s infinite ease-in-out,
-    rotate 40s infinite alternate ease-in-out,
+    rotate 40s infinite linear,
     opacity 5s infinite alternate ease-in-out
 
 }
@@ -76,6 +77,6 @@ html {
     z-index: 3;
     border-radius: 100%;
     animation: cyclic-blur 15s infinite ease-in-out,
-    rotate 10s infinite alternate ease-in-out,
+    rotate 30s infinite linear,
     opacity 15s infinite alternate ease-in-out
   }
