@@ -15,6 +15,27 @@
         <div class="logo-shadow2"></div>
         <div class="logo-shadow3"></div>
       </div>
+      <div class="md-content" id="md-content">
+        <h1>Notes List</h1>
+        {% assign sorted_pages = site.pages | sort: 'path' %}
+        {% assign current_folder = "" %}
+        {% for page in sorted_pages %}
+            {% assign page_path_array = page.path | split: '/' %}
+            {% if page_path_array.first == "notes" %}
+                {% assign folder_name = page_path_array[1] %}
+                {% if folder_name != current_folder %}
+                    {% unless forloop.first %}
+                        </ul>
+                    {% endunless %}
+                    <h2>{{ folder_name }}</h2>
+                    <ul>
+                    {% assign current_folder = folder_name %}
+                {% endif %}
+                <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
     </div>
   </body>
 </html>

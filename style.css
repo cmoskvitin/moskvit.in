@@ -20,6 +20,18 @@ html {
   position: relative;
 }
 
+.md-content {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  height: 80%;
+  background-color: #fff;
+  z-index: 102;
+  opacity: 50%;
+  /* overflow: scroll; */
+}
+
 .logo-wrapper {
   display: flex;
   position: relative;

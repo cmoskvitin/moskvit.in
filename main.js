@@ -26,10 +26,12 @@ async function fetchRepoFiles() {
       );
     });
 
+    console.log(markdownFiles)
+
     // Map markdownFiles to an array of objects with the desired structure
     const notes = markdownFiles.map((file) => {
       const title = file.path.split("/").pop().replace(".md", "");
-      const url = `https://github.com/${repoOwner}/${repoName}/blob/${branchName}/${file.path}`;
+      const url = file.path.replace(".md", "")
       return { title, url };
     });
 
@@ -47,3 +49,9 @@ async function fetchRepoFiles() {
 }
 
 fetchRepoFiles().then((result) => console.log(result));
+
+// fetch('https://moskvit.in/notes/test')
+//   .then(response => response.text())
+//   .then(html => {
+//     document.getElementById('md-content').innerHTML = html;
+//   });
