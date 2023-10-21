@@ -22,22 +22,37 @@
         <h1>Notes List</h1>
         {% assign sorted_pages = site.pages | sort: 'path' %}
         {% assign current_folder = "" %}
+        {% assign current_subfolder = "" %}
+        <ul>
         {% for page in sorted_pages %}
             {% assign page_path_array = page.path | split: '/' %}
             {% if page_path_array.first == "notes" %}
                 {% assign folder_name = page_path_array[1] %}
+                {% assign subfolder_name = page_path_array[2] %}
                 {% if folder_name != current_folder %}
                     {% unless forloop.first %}
                         </ul>
+                        </ul>
                     {% endunless %}
-                    <h2>{{ folder_name }}</h2>
+                    <li><h2>{{ folder_name }}</h2>
                     <ul>
                     {% assign current_folder = folder_name %}
+                    {% assign current_subfolder = "" %}
+                {% endif %}
+                {% if subfolder_name and subfolder_name != current_subfolder %}
+                    {% unless current_subfolder == "" %}
+                        </ul>
+                    {% endunless %}
+                    <li><h3>{{ subfolder_name }}</h3>
+                    <ul>
+                    {% assign current_subfolder = subfolder_name %}
                 {% endif %}
                 <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
             {% endif %}
         {% endfor %}
         </ul>
+        </ul>
+        
       </div>
     </div>
   </body>
