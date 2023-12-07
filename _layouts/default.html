@@ -41,9 +41,13 @@
       </header>
       <section>
 
-        {% for post in site.posts %}
-        * [{{ post.title }}]({{ post.url | relative_url }}) - {{ post.date | date_to_string }}
-      {% endfor %}
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title }} - {{ post.date | date_to_string }}</a>
+            </li>
+            {% endfor %}
+        </ul>
 
       </section>
       <footer>
