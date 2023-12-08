@@ -2,11 +2,12 @@
 layout: default
 ---
 
+<small>{{ page.date | date: "%-d %B %Y" }}</small>
+
 {% if page.tags %}
-<small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+<em>{{ page.tags | join: "</em> - <em>" }}</em>
 {% endif %}
 
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
 <h1>{{ page.title }}</h1>
 
 {{content}}
