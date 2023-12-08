@@ -17,7 +17,7 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
       
 
-      <ul>
+      <ul class="cloud">
         {% for category in site.categories %}
           <li>
             <a href="/categories/{{ category | first | slugify }}/">{{ category | first }} [{{ category | last | size }}]</a>
