@@ -12,3 +12,11 @@ ul.cloud {
   justify-content: center;
   line-height: 2.5rem;
 }
+ul.cloud a {
+  color: rgb(0, 136, 255);
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.125rem 0.25rem;
+  text-decoration: none;
+  position: relative;
+}
