@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Заметки Москвитина
 
 {% assign current_date = site.time %}
