@@ -4,7 +4,7 @@ layout: default
 
 # Заметки Москвитина
 
-{% assign current_date = site.time %}
+<!-- {% assign current_date = site.time %}
 {% assign recent_posts = site.posts | where_exp: "post", "post.date > current_date | minus: 604800" %}
 
 <h2>Новое на этой неделе:</h2>
@@ -15,4 +15,4 @@ layout: default
       - <small>{{ post.date | date: "%b %d, %Y" }}</small>
     </li>
   {% endfor %}
-</ul>
+</ul> -->
