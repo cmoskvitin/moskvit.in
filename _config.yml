@@ -2,7 +2,7 @@ remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-remote-theme
 title: moskvit.in
-description: A personal page
+description: Заметки Москвитина
 show_downloads: false
 page_excerpts: true
 excerpt_separator: <!--more-->
