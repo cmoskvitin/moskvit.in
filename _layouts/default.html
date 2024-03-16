@@ -25,6 +25,11 @@
         {% endfor %}
         </ul>
 
+      </header>
+      <section>
+
+        {{ content }}
+
         <ul>
           {% for post in site.posts %}
           <li>
@@ -33,12 +38,7 @@
           </li>
           {% endfor %}
       </ul>
-
-      </header>
-      <section>
-
-        {{ content }}
-
+      
       </section>
       <!-- <footer>
         {% if site.github.is_project_page %}
