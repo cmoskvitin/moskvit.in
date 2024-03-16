@@ -11,6 +11,7 @@ Refer back to [Lorem Note 1](./lorem1).
 1. Ordered List Item 1
 2. Ordered List Item 2
 3. Ordered List Item 3
+<!--more-->
 
 ## Images and Links
 
