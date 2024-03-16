@@ -5,3 +5,4 @@ title: moskvit.in
 description: A personal page
 show_downloads: false
 page_excerpts: true
+excerpt_separator: <!--more-->

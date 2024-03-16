@@ -5,9 +5,6 @@ layout: post
 tags: lorem
 ---
 
-# Sit Amet Consectetur
-
-## Overview
 
 Refer back to [Lorem Note 1](./lorem1).
 

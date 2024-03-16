@@ -5,4 +5,4 @@ category: music
 permalink: /categories/music/
 ---
 
-Музыкальные открытия
+### Музыкальные открытия

@@ -5,4 +5,4 @@ category: gaming
 permalink: /categories/gaming/
 ---
 
-Заметки об играх
+### Заметки об играх
