@@ -20,7 +20,7 @@
       <ul class="cloud">
         {% for category in site.categories %}
           <li>
-            <a href="/categories/{{ category | first | slugify }}/">{{ category | first }}</a><sub>{{ category | last | size }}</sub>
+            <a href="/categories/{{ category | first | slugify }}/">{{ category | first }}<sub>{{ category | last | size }}</sub></a>
           </li>
         {% endfor %}
         </ul>

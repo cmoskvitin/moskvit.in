@@ -21,6 +21,11 @@ ul.cloud a {
   position: relative;
 }
 
+ul.cloud a>sub {
+  color: gray;
+  font-size: 0.8rem;
+}
+
 .no-margin-bottom {
   margin-bottom: 0;
 }
