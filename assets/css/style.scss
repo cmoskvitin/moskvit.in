@@ -25,11 +25,21 @@ ul.cloud a {
   position: relative;
 }
 
+<<<<<<< HEAD
 ul.cloud a>sub {
   color: #a3a3a3;
+=======
+ul.cloud a > sub {
+  color: gray;
+>>>>>>> 787c82fd2718799745059ea8b3085b80d7d9d900
   font-size: 0.8rem;
 }
 
 .no-margin-bottom {
   margin-bottom: 0;
+}
+
+a:hover {
+  font-weight: inherit;
+  text-decoration-color: rgb(255, 90, 255);
 }
