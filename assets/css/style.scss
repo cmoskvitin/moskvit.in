@@ -57,27 +57,27 @@ a:hover {
 }
 
 
-article h2:hover:after{
+article, section h2:hover:after{
   content: ">";
   color: var(--color-primary);
 }
 
-article h2:hover{
+article, section h2:hover{
   color: inherit;
 }
 
-article a {
+article, section a {
   text-decoration: underline;
   text-decoration-color: var(--color-text-highlight);
   color: var(--color-text-highlight);
 }
 
-article a:hover {
+article, section a:hover {
   text-decoration-color: var(--color-primary);
   color: var(--color-text-highlight);
 }
 
-article h2>a {
+article, section h2>a {
   text-decoration: none;
 }
 
