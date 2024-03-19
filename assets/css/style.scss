@@ -1,17 +1,72 @@
----
----
+// ---
+// ---
 
 @import "{{ site.theme }}";
 
+:root {
+  --color-background: #212121;
+  --color-text: #a3a3a3;
+  --color-text-highlight: #BDBDBD;
+  --color-primary: #9C27B0;
+  --color-secondary: #673AB7;
+}
+
+// STYLES PURGE
 body {
-  background-color: #212121;
-  color: #a3a3a3
+  background-color: var(--color-background);
+  color: var(--color-text)
 }
 
-h1, h2, h3, h4, h5, strong {
-  color: #a3a3a3
+h1, h2, h3, h4, h5, strong, .tag {
+  color: var(--color-text-highlight)
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: inherit;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+
+// THINGIES ON HOVER
+
+.tag:before {
+  content: "⌗";
+  font-size: 0.8rem;
+}
+
+.tag:hover :before {
+  color: var(--color-primary);
+}
+
+.home-link:hover :after {
+  content: "⌂";
+  color: var(--color-primary)
+}
+
+article h2>a:hover {
+  text-decoration: none
+}
+
+article h2>a:hover :after{
+  content: "";
+  color: var(--color-primary);
+}
+
+article a {
+  color: var(--color-secondary);
+}
+
+
+
+// LINK CLOUD
 ul.cloud {
   list-style: none;
   padding-left: 0;
@@ -26,20 +81,21 @@ ul.cloud a {
   display: block;
   font-size: 1.5rem;
   padding: 0.125rem 0.25rem;
-  text-decoration: none;
   position: relative;
 }
 
 ul.cloud a>sub {
-  color: #a3a3a3;
+  color: var(--color-text-highlight);
   font-size: 0.8rem;
 }
 
-.no-margin-bottom {
-  margin-bottom: 0;
+ul.cloud a>sub:hover {
+  color: var(--color-primary);
 }
 
-a:hover {
-  font-weight: inherit;
-  text-decoration-color: rgb(255, 90, 255);
+
+
+//other
+article {
+  padding-bottom: 30px
 }

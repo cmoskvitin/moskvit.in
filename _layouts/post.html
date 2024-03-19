@@ -6,5 +6,5 @@ layout: default
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
 
 {% if page.tags %}
-<code>{{ page.tags | join: "</code> <code>" }}</code>
+<span class="tag">{{ page.tags | join: "</span> <span>" }}</span>
 {% endif %} {{content}}
