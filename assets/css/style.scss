@@ -105,11 +105,9 @@ ul.cloud a>sub {
   font-size: 0.8rem;
 }
 
-ul.cloud a>sub:hover {
+ul.cloud a:hover>sub {
   color: var(--color-primary);
 }
-
-
 
 //other
 article {

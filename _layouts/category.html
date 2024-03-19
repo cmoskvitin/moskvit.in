@@ -17,7 +17,8 @@ layout: default
     {% if post.tags %}
       <span class="post-tag">{{ post.tags | join: "</span> <span class=post-tag>" }}</span>
     {% endif %}
-
+    <br>
+    <br>
     {{ post.excerpt }}
   </article>
 {% endfor %}

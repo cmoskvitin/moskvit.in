@@ -4,9 +4,9 @@ layout: default
 
 <h1 class="no-margin-bottom">{{ page.title }}</h1>
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
-&nbsp;
 {% if page.tags %}
 <span class="post-tag">{{ page.tags | join: "</span> <span class=post-tag>" }}</span>
 {% endif %}
-
+<br>
+<br>
 {{content}}
