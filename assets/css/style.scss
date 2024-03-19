@@ -17,7 +17,7 @@ body {
   color: var(--color-text)
 }
 
-h1, h2, h3, h4, h5, strong, .tag {
+h1, h2, h3, h4, h5, strong, .post-tag {
   color: var(--color-text-highlight)
 }
 
@@ -37,16 +37,20 @@ a:hover {
 
 // THINGIES ON HOVER
 
-.tag:before {
-  content: "⌗";
+.post-tag:before {
+  content: "#";
   font-size: 0.8rem;
 }
 
-.tag:hover :before {
+.post-tag:hover:before {
   color: var(--color-primary);
 }
 
-.home-link:hover :after {
+.home-link>a:hover {
+  color: inherit;
+}
+
+.home-link:hover:after {
   content: "⌂";
   color: var(--color-primary)
 }
@@ -55,11 +59,8 @@ article a {
   color: var(--color-secondary);
 }
 
-article h2>a:hover {
-  text-decoration: none
-}
 
-article h2>a:hover :after{
+article h2:hover:after{
   content: "ᐳ";
   color: var(--color-primary);
 }

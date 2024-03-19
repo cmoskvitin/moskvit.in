@@ -13,7 +13,7 @@ layout: default
     <small>{{ post.date | date: "%-d %B %Y" }}</small>
     {{ post.excerpt }}
     {% if post.tags %}
-      <span class="tag">{{ post.tags | join: "</span> <span class="tag">" }}</span>
+      <span class="post-tag">{{ post.tags | join: "</span> <span class="post-tag">" }}</span>
     {% endif %}
   </article>
 {% endfor %}
