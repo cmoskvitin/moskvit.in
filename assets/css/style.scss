@@ -81,6 +81,10 @@ article, section h2>a {
   text-decoration: none;
 }
 
+img.social-link {
+  filter: saturate(var(--color-primary));
+}
+
 
 
 // LINK CLOUD

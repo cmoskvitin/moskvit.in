@@ -14,8 +14,9 @@
       <header>
         <h1 class="home-link"><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-      
+        <!-- <p>{{ site.description | default: site.github.project_tagline }}</p> -->
+        <a href="https://t.me/cmoskvitin"><img class="social-link" src="/assets/tg.svg" alt=""></a>
+        <a href="https://www.youtube.com/channel/UCQIBxRQvzz_uzoe09WDtDuQ"><img class="social-link" src="/assets/yt.svg" alt=""></a>
 
       <ul class="cloud">
         {% for category in site.categories %}
@@ -37,8 +38,6 @@
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
          -->
-        <a href="https://t.me/cmoskvitin"><img src="/assets/tg.svg" alt=""></a>
-        <a href="https://www.youtube.com/channel/UCQIBxRQvzz_uzoe09WDtDuQ"><img src="/assets/yt.svg" alt=""></a>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
