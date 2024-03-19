@@ -56,9 +56,15 @@ a:hover {
 }
 
 article a {
-  color: var(--color-secondary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-text-highlight);
+  color: var(--color-text-highlight);
 }
 
+article a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+}
 
 article h2:hover:after{
   content: "ᐳ";
