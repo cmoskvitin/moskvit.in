@@ -12,10 +12,10 @@ layout: default
         {{ post.title }}
       </a>
     </h2>
-    <small>{{ page.date | date: "%-d %B %Y" }}</small>
+    <small>{{ post.date | date: "%-d %B %Y" }}</small>
     {{ post.excerpt }}
-    {% if page.tags %}
-      <code>{{ page.tags | join: "</code> - <code>" }}</code>
+    {% if post.tags %}
+      <code>{{ post.tags | join: "</code> - <code>" }}</code>
     {% endif %}
   </article>
 {% endfor %}
