@@ -51,18 +51,20 @@ a:hover {
   color: var(--color-primary)
 }
 
+article a {
+  color: var(--color-secondary);
+}
+
 article h2>a:hover {
   text-decoration: none
 }
 
 article h2>a:hover :after{
-  content: "";
+  content: "ᐳ";
   color: var(--color-primary);
 }
 
-article a {
-  color: var(--color-secondary);
-}
+
 
 
 
