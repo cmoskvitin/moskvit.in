@@ -81,9 +81,14 @@ article, section h2>a {
   text-decoration: none;
 }
 
-img.social-link {
-  filter: saturate(var(--color-primary));
+.social-link path {
+  fill: var(--color-text-highlight);
 }
+
+.social-link:hover path {
+  fill: var(--color-primary);
+}
+
 
 
 
