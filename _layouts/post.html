@@ -3,10 +3,11 @@ layout: default
 ---
 
 <h1 class="no-margin-bottom">{{ page.title }}</h1>
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
+<small>{{ page.date | date: "%-d %B %Y" }}
 {% if page.tags %}
 <span class="post-tag">{{ page.tags | join: "</span> <span class=post-tag>" }}</span>
 {% endif %}
+</small>
 <br>
 <br>
 {{content}}
