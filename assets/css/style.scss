@@ -130,6 +130,13 @@ ul.cloud a:hover>sub {
   color: var(--color-primary);
 }
 
+ul.cloud:before {
+  content: "/";
+}
+
+ul.cloud:hover:before {
+  color: var(--color-primary)
+}
 //other
 article {
   padding-bottom: 30px
