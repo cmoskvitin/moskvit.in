@@ -123,3 +123,8 @@ ul.cloud a:hover>sub {
 article {
   padding-bottom: 30px
 }
+
+.post-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
