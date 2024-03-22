@@ -93,8 +93,11 @@ article, section h2>a {
   text-decoration: none;
 }
 
-.post-category-link:hover:before {
+.post-category-link:before {
   content: "/";
+}
+
+.post-category-link:hover:before {
   color: var(--color-primary)
 }
 

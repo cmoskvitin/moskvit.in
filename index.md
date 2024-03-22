@@ -12,7 +12,7 @@ layout: default
       </a>
     </h2>
     <span>
-    <a class="post-category-link" href="/categories/{{ post.categories | first | slugify }}/">{{ post.categories | first }}
+    <a class="post-category-link" href="/categories/{{ post.categories | first | slugify }}/">{{ post.categories | first }}</a>
     </span>
   
   </div>
