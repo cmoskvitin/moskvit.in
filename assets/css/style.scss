@@ -89,6 +89,14 @@ article, section h2>a {
   fill: var(--color-primary);
 }
 
+.post-category-link {
+  text-decoration: none;
+}
+
+.post-category-link:hover:before {
+  content: "/";
+  color: var(--color-primary)
+}
 
 
 

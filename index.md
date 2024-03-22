@@ -12,7 +12,7 @@ layout: default
       </a>
     </h2>
     <span>
-    variables test: post.category.url: {{post.category.url}}, post.categories: {{post.categories}}, page.category.url: {{page.category.url}}, page.categories: {{page.categories}}
+    <a class="post-category-link" href="/categories/{{ post.categories | first | slugify }}/">{{ post.categories | first }}
     </span>
   
   </div>
