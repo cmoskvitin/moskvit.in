@@ -12,7 +12,7 @@ layout: default
       </a>
     </h2>
     <span>
-    <i class="fa-solid fa-house"></i><a class="post-category-link" href="/categories/{{ post.categories | first | slugify }}/">{{ post.categories | first }}</a>
+    <a class="post-category-link" href="/categories/{{ post.categories | first | slugify }}/">{{ post.categories | first }}</a>
     </span>
   
   </div>
@@ -25,4 +25,3 @@ layout: default
     {{ post.excerpt }}
   </article>
 {% endfor %}
-<script src="https://kit.fontawesome.com/776edca3ea.js" crossorigin="anonymous"></script>
