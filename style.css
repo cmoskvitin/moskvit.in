@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Noto+Sans:wght@900&family=Pacifico&display=swap");
+@import url("animations.css");
+@import url("colors.css");
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+
+html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Mystic);
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 30vh;
+  height: 30vh;
+}
